@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on Joshua O&#39;Connor</title>
+    <link>https://joshuao.com/</link>
+    <description>Recent content in Homepage on Joshua O&#39;Connor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://joshuao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jrenamer</title>
+      <link>https://joshuao.com/posts/jrenamer/</link>
+      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://joshuao.com/posts/jrenamer/</guid>
+      <description>I created a program to rename files based on simple interpolation of a series of fragments extract first from the files info provided by the OS, and optionally by using Python scripts.
+Motivation I noticed a common pattern in my computer usage. I&amp;rsquo;d want to rename a bunch of files based on some arbitrary categorisation and I&amp;rsquo;d just write a little Python script to do it, calculating/scraping/gathering which information I needed for the rename.</description>
+    </item>
+    
+    <item>
+      <title>Emoji Palette</title>
+      <link>https://joshuao.com/posts/emoji-palette/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://joshuao.com/posts/emoji-palette/</guid>
+      <description>I created a program to create images of colour palettes based on a set of emojis.
+Motivation Around November 2021, there was a TikTok trend to create palettes of colours from a given set of emoji. This was usually accomplished using the blend tool in a paint program. I thought it would be fun to automate it, learn a bit about how emojis are represented, and learn a bit about colour mixing.</description>
+    </item>
+    
+  </channel>
+</rss>

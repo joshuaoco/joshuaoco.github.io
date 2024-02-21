@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emoji Palette | Joshua O&#39;Connor</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/index.xml">RSS</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Emoji Palette</span></h1>
+
+<h2 class="date">2021/12/13</h2>
+</div>
+
+<main>
+<p>I created <a href="https://github.com/Joshuao95/emoji-palette/blob/main/readme.org">a program</a> to create images of colour palettes based on a set of emojis.</p>
+<h2 id="motivation">Motivation</h2>
+<p>Around November 2021, there was a TikTok trend to create palettes of colours from a given set of emoji.
+This was usually accomplished using the blend tool in a paint program.
+I thought it would be fun to automate it, learn a bit about how emojis are represented, and learn a bit about colour mixing.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="preparing-emojis">Preparing Emojis</h3>
+<p>Not shipped with this tool are the actual PNGs for creating the emoji palettes.
+This is because I can&rsquo;t be bothered to work out the licences.
+Instead, included is a python script which as of 2021-11-20 will scrape the emojis from the Unicode website.</p>
+<p>This really is a testament to just how easy web scraping is with Python</p>
+<h3 id="usage">Usage</h3>
+<p>It&rsquo;s a simple tool so I&rsquo;ll leave in depth stuff to <code>--help</code> here is an example though</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">emoji-palette -p twitter -s 500 -r &#34;emoji_scraper&#34; 🍑 🍌 🦫
+</code></pre></div><p>Will output</p>
+<figure><img src="/ox-hugo/emoji_palette.png"/>
+</figure>
+
+<h2 id="colour-mixing">Colour mixing</h2>
+<p>Colour mixing doesn&rsquo;t appear to be a precise art, which makes sense considering human colour perception is not a precise sense.
+Given that, I&rsquo;ve gone for the simplest approach I could implement, which may very well not produce &ldquo;nice&rdquo; outputs, but again this was mostly for fun</p>
+<p>The emoji are resolved to a single colour by simply resizing them to a 1x1 pixel using a standard flitering technique.
+These colours are then blended by taking an average of the R/G/B values, which is a simple model.</p>
+<p>I may revisit this and add alternate colour blending options, once I&rsquo;ve researched it more</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

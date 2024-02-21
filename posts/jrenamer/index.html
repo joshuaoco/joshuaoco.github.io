@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jrenamer | Joshua O&#39;Connor</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/index.xml">RSS</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">jrenamer</span></h1>
+
+<h2 class="date">2021/12/18</h2>
+</div>
+
+<main>
+<p>I created <a href="https://github.com/Joshuao95/jrenamer">a program</a> to rename files based on simple interpolation of a series of fragments extract first from the files info provided by the OS, and optionally by using Python scripts.</p>
+<h2 id="motivation">Motivation</h2>
+<p>I noticed a common pattern in my computer usage.
+I&rsquo;d want to rename a bunch of files based on some arbitrary categorisation and I&rsquo;d just write a little Python script to do it, calculating/scraping/gathering which information I needed for the rename.
+This really worked just fine, but each time I&rsquo;d rewrite the actual logic of renaming the files.</p>
+<p>I decided it would be nice to extract that out into a tool, while still keeping the flexibility of the Python scripts (because you really really can&rsquo;t beat the speed of a little script for such stuff!)</p>
+<h2 id="rust-strikes-again">Rust Strikes Again!</h2>
+<p>I really love Rust&rsquo;s ergonomics for so many things, and it really does save you from messing up stuff with its fastidious checking and memory guarantees.
+But it does mean that it&rsquo;s always going to be a bit more finicky (even if that finickyness is just hidden from you otherwise).</p>
+<p>I&rsquo;m not sure if I&rsquo;m convinced of the value of rewriting simple command-line tools in Rust (even though I keep doing it).</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
